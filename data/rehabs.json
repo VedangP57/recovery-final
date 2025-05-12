@@ -1,0 +1,698 @@
+{
+  "rehabs": [
+    {
+      "id": "sunrise-recovery-ca",
+      "name": "Sunrise Recovery Center",
+      "address": "1234 Recovery Road",
+      "city": "Los Angeles",
+      "state": "CA",
+      "phone": "(800) 123-4567",
+      "description": "Sunrise Recovery Center offers comprehensive treatment programs in a serene environment. Our evidence-based approach combines traditional and holistic therapies to support lasting recovery.",
+      "treatments": [
+        "Detox",
+        "Residential",
+        "Outpatient",
+        "Dual Diagnosis"
+      ],
+      "rating": 4.8,
+      "imageUrl": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d",
+      "insurance": [
+        "Blue Cross",
+        "Aetna",
+        "Cigna",
+        "United Healthcare"
+      ],
+      "amenities": [
+        "Private Rooms",
+        "Pool",
+        "Fitness Center",
+        "Meditation Garden"
+      ],
+      "accreditations": [
+        "JCAHO",
+        "CARF"
+      ],
+      "specialties": [
+        "Alcohol Addiction",
+        "Drug Addiction",
+        "Mental Health",
+        "Trauma Recovery"
+      ]
+    },
+    {
+      "id": "malibu-healing-ca",
+      "name": "Malibu Healing Center",
+      "address": "5678 Ocean View Drive",
+      "city": "Malibu",
+      "state": "CA",
+      "phone": "(800) 234-5678",
+      "description": "Luxury treatment center offering personalized care in a private, ocean-view setting. Comprehensive programs for executives and professionals.",
+      "treatments": [
+        "Executive Program",
+        "Luxury Detox",
+        "Holistic Therapy",
+        "One-on-One Counseling"
+      ],
+      "rating": 4.9,
+      "imageUrl": "https://images.unsplash.com/photo-1615460549969-36fa19521a4f",
+      "insurance": [
+        "Private Pay",
+        "Cigna",
+        "Aetna",
+        "Blue Shield"
+      ],
+      "amenities": [
+        "Ocean Views",
+        "Private Suites",
+        "Gourmet Dining",
+        "Spa Services"
+      ],
+      "accreditations": [
+        "JCAHO",
+        "NAATP"
+      ],
+      "specialties": [
+        "Executive Treatment",
+        "Privacy Focus",
+        "Dual Diagnosis",
+        "Luxury Rehab"
+      ]
+    },
+    {
+      "id": "bay-recovery-ca",
+      "name": "Bay Area Recovery",
+      "address": "789 Golden Gate Ave",
+      "city": "San Francisco",
+      "state": "CA",
+      "phone": "(800) 345-6789",
+      "description": "Urban treatment center specializing in modern approaches to recovery, including tech-enabled therapy and innovative treatment methods.",
+      "treatments": [
+        "IOP",
+        "PHP",
+        "Virtual Therapy",
+        "Group Sessions"
+      ],
+      "rating": 4.7,
+      "imageUrl": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9",
+      "insurance": [
+        "Kaiser",
+        "Blue Cross",
+        "Medicare",
+        "Medicaid"
+      ],
+      "amenities": [
+        "Modern Facilities",
+        "Tech Integration",
+        "Group Spaces",
+        "Art Studio"
+      ],
+      "accreditations": [
+        "CARF",
+        "LegitScript"
+      ],
+      "specialties": [
+        "Young Adults",
+        "Tech Professionals",
+        "LGBTQ+ Focus",
+        "Mental Health"
+      ]
+    },
+    {
+      "id": "desert-hope-ca",
+      "name": "Desert Hope Healing",
+      "address": "321 Palm Springs Rd",
+      "city": "Palm Springs",
+      "state": "CA",
+      "phone": "(800) 456-7890",
+      "description": "Tranquil desert setting offering evidence-based treatment programs with a focus on mind-body healing and holistic recovery.",
+      "treatments": [
+        "Residential",
+        "Detox",
+        "Holistic Therapy",
+        "Aftercare"
+      ],
+      "rating": 4.8,
+      "imageUrl": "https://images.unsplash.com/photo-1469796466635-455ede028aca",
+      "insurance": [
+        "Anthem",
+        "United Healthcare",
+        "Tricare",
+        "Private Pay"
+      ],
+      "amenities": [
+        "Desert Views",
+        "Meditation Gardens",
+        "Yoga Studio",
+        "Swimming Pool"
+      ],
+      "accreditations": [
+        "JCAHO",
+        "CARF"
+      ],
+      "specialties": [
+        "Holistic Treatment",
+        "Trauma Recovery",
+        "Addiction",
+        "Wellness Focus"
+      ]
+    },
+    {
+      "id": "sacramento-recovery-ca",
+      "name": "Sacramento Recovery Center",
+      "address": "456 Capital Ave",
+      "city": "Sacramento",
+      "state": "CA",
+      "phone": "(800) 567-8901",
+      "description": "Community-focused treatment center offering affordable, comprehensive care with strong family involvement programs.",
+      "treatments": [
+        "Family Program",
+        "Outpatient",
+        "Support Groups",
+        "Life Skills"
+      ],
+      "rating": 4.6,
+      "imageUrl": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d",
+      "insurance": [
+        "Medicare",
+        "Medicaid",
+        "Most Insurance",
+        "Sliding Scale"
+      ],
+      "amenities": [
+        "Family Rooms",
+        "Community Space",
+        "Learning Center",
+        "Recreation Area"
+      ],
+      "accreditations": [
+        "CARF",
+        "NAATP"
+      ],
+      "specialties": [
+        "Family Focus",
+        "Affordable Care",
+        "Community Support",
+        "Life Skills"
+      ]
+    },
+    {
+      "id": "oceanview-wellness-fl",
+      "name": "Oceanview Wellness",
+      "address": "5678 Healing Boulevard",
+      "city": "Miami",
+      "state": "FL",
+      "phone": "(800) 234-5678",
+      "description": "Located steps from the beach, Oceanview Wellness provides a peaceful setting for recovery. Our experienced staff delivers personalized care using the latest treatment methods.",
+      "treatments": [
+        "Residential",
+        "PHP",
+        "IOP",
+        "Aftercare"
+      ],
+      "rating": 4.9,
+      "imageUrl": "https://images.unsplash.com/photo-1571896349842-33c89424de2d",
+      "insurance": [
+        "Anthem",
+        "Humana",
+        "Kaiser",
+        "Medicare"
+      ],
+      "amenities": [
+        "Ocean View Rooms",
+        "Beach Access",
+        "Yoga Studio",
+        "Art Therapy Room"
+      ],
+      "accreditations": [
+        "JCAHO",
+        "NAATP"
+      ],
+      "specialties": [
+        "Executive Treatment",
+        "Dual Diagnosis",
+        "Anxiety & Depression",
+        "Substance Abuse"
+      ]
+    },
+    {
+      "id": "palm-beach-recovery-fl",
+      "name": "Palm Beach Recovery",
+      "address": "789 Royal Palm Way",
+      "city": "Palm Beach",
+      "state": "FL",
+      "phone": "(800) 345-6789",
+      "description": "Luxury beachfront treatment center offering exclusive programs with a focus on privacy and comprehensive care.",
+      "treatments": [
+        "Executive Program",
+        "Luxury Detox",
+        "One-on-One Therapy",
+        "Holistic Care"
+      ],
+      "rating": 4.9,
+      "imageUrl": "https://images.unsplash.com/photo-1615460549969-36fa19521a4f",
+      "insurance": [
+        "Private Pay",
+        "Select Insurance",
+        "Executive Plans"
+      ],
+      "amenities": [
+        "Private Beach",
+        "Luxury Suites",
+        "Gourmet Dining",
+        "Spa Services"
+      ],
+      "accreditations": [
+        "JCAHO",
+        "NAATP"
+      ],
+      "specialties": [
+        "Luxury Treatment",
+        "Executive Care",
+        "Privacy Focus",
+        "Holistic Healing"
+      ]
+    },
+    {
+      "id": "gulf-coast-healing-fl",
+      "name": "Gulf Coast Healing Center",
+      "address": "123 Gulf Shore Dr",
+      "city": "Naples",
+      "state": "FL",
+      "phone": "(800) 456-7890",
+      "description": "Serene gulf coast setting offering comprehensive treatment programs with a focus on lasting recovery and wellness.",
+      "treatments": [
+        "Detox",
+        "Residential",
+        "Family Program",
+        "Aftercare"
+      ],
+      "rating": 4.8,
+      "imageUrl": "https://images.unsplash.com/photo-1571896349842-33c89424de2d",
+      "insurance": [
+        "Most Insurance",
+        "Private Pay",
+        "Financing Available"
+      ],
+      "amenities": [
+        "Gulf Views",
+        "Private Rooms",
+        "Fitness Center",
+        "Meditation Garden"
+      ],
+      "accreditations": [
+        "CARF",
+        "JCAHO"
+      ],
+      "specialties": [
+        "Family Program",
+        "Trauma Recovery",
+        "Addiction",
+        "Mental Health"
+      ]
+    },
+    {
+      "id": "orlando-recovery-fl",
+      "name": "Orlando Recovery Center",
+      "address": "456 Central Florida Pkwy",
+      "city": "Orlando",
+      "state": "FL",
+      "phone": "(800) 567-8901",
+      "description": "Central Florida's premier treatment center offering comprehensive care in a supportive environment.",
+      "treatments": [
+        "Medical Detox",
+        "Residential",
+        "PHP",
+        "IOP"
+      ],
+      "rating": 4.7,
+      "imageUrl": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d",
+      "insurance": [
+        "Most Major Insurance",
+        "Medicaid",
+        "Private Pay"
+      ],
+      "amenities": [
+        "Modern Facilities",
+        "Recreation Areas",
+        "Therapy Rooms",
+        "Outdoor Spaces"
+      ],
+      "accreditations": [
+        "JCAHO",
+        "LegitScript"
+      ],
+      "specialties": [
+        "Dual Diagnosis",
+        "Young Adults",
+        "Family Program",
+        "Evidence-Based Treatment"
+      ]
+    },
+    {
+      "id": "mountain-serenity-co",
+      "name": "Mountain Serenity",
+      "address": "9012 Alpine Way",
+      "city": "Denver",
+      "state": "CO",
+      "phone": "(800) 345-6789",
+      "description": "Nestled in the Rocky Mountains, Mountain Serenity offers a transformative recovery experience. Our program combines adventure therapy with clinical excellence.",
+      "treatments": [
+        "Detox",
+        "Residential",
+        "Family Program",
+        "Adventure Therapy"
+      ],
+      "rating": 4.7,
+      "imageUrl": "https://images.unsplash.com/photo-1469796466635-455ede028aca",
+      "insurance": [
+        "Blue Shield",
+        "United",
+        "Optum",
+        "Tricare"
+      ],
+      "amenities": [
+        "Mountain Views",
+        "Hiking Trails",
+        "Rock Climbing",
+        "Meditation Spaces"
+      ],
+      "accreditations": [
+        "CARF",
+        "LegitScript"
+      ],
+      "specialties": [
+        "Wilderness Therapy",
+        "PTSD",
+        "Young Adult Program",
+        "Holistic Treatment"
+      ]
+    },
+    {
+      "id": "manhattan-wellness-ny",
+      "name": "Manhattan Wellness Center",
+      "address": "123 Park Avenue",
+      "city": "New York",
+      "state": "NY",
+      "phone": "(800) 789-0123",
+      "description": "Located in the heart of Manhattan, our center offers comprehensive treatment programs tailored for urban professionals. State-of-the-art facilities combined with evidence-based therapies.",
+      "treatments": [
+        "Executive Program",
+        "Outpatient",
+        "Evening IOP",
+        "Dual Diagnosis"
+      ],
+      "rating": 4.8,
+      "imageUrl": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b",
+      "insurance": [
+        "Aetna",
+        "Blue Cross",
+        "United Healthcare",
+        "Cigna"
+      ],
+      "amenities": [
+        "Private Offices",
+        "Meditation Room",
+        "Group Spaces",
+        "Business Center"
+      ],
+      "accreditations": [
+        "JCAHO",
+        "OASAS"
+      ],
+      "specialties": [
+        "Professional Program",
+        "Anxiety & Depression",
+        "Stress Management",
+        "Work-Life Balance"
+      ]
+    },
+    {
+      "id": "hudson-valley-recovery-ny",
+      "name": "Hudson Valley Recovery",
+      "address": "456 River Road",
+      "city": "Kingston",
+      "state": "NY",
+      "phone": "(800) 901-2345",
+      "description": "Nestled in the scenic Hudson Valley, our facility provides a peaceful environment for healing. We combine traditional treatment methods with holistic approaches in a serene natural setting.",
+      "treatments": [
+        "Residential",
+        "Detox",
+        "Family Program",
+        "Holistic Therapy"
+      ],
+      "rating": 4.9,
+      "imageUrl": "https://images.unsplash.com/photo-1571896349842-33c89424de2d",
+      "insurance": [
+        "Most Insurance",
+        "Medicaid",
+        "Medicare",
+        "Private Pay"
+      ],
+      "amenities": [
+        "River Views",
+        "Nature Trails",
+        "Art Studio",
+        "Yoga Center"
+      ],
+      "accreditations": [
+        "CARF",
+        "OASAS"
+      ],
+      "specialties": [
+        "Holistic Treatment",
+        "Nature Therapy",
+        "Art Therapy",
+        "Trauma Recovery"
+      ]
+    },
+    {
+      "id": "brooklyn-healing-ny",
+      "name": "Brooklyn Healing Center",
+      "address": "789 Atlantic Avenue",
+      "city": "Brooklyn",
+      "state": "NY",
+      "phone": "(800) 345-6789",
+      "description": "A modern urban treatment center offering innovative programs with a focus on community integration and cultural competency. Specialized care for diverse populations.",
+      "treatments": [
+        "PHP",
+        "IOP",
+        "Group Therapy",
+        "Cultural Programs"
+      ],
+      "rating": 4.7,
+      "imageUrl": "https://images.unsplash.com/photo-1518780664697-55e3ad937233",
+      "insurance": [
+        "Medicaid",
+        "Medicare",
+        "Most Insurance",
+        "Sliding Scale"
+      ],
+      "amenities": [
+        "Community Space",
+        "Art Room",
+        "Music Studio",
+        "Rooftop Garden"
+      ],
+      "accreditations": [
+        "JCAHO",
+        "OASAS"
+      ],
+      "specialties": [
+        "Cultural Competency",
+        "Urban Recovery",
+        "Creative Arts Therapy",
+        "Community Support"
+      ]
+    },
+    {
+      "id": "long-island-serenity-ny",
+      "name": "Long Island Serenity",
+      "address": "321 Shore Drive",
+      "city": "Southampton",
+      "state": "NY",
+      "phone": "(800) 567-8901",
+      "description": "Luxury beachfront treatment facility offering exclusive programs in the Hamptons. Private, discrete care with comprehensive wellness services.",
+      "treatments": [
+        "Executive Detox",
+        "Luxury Residential",
+        "Private Therapy",
+        "Wellness Program"
+      ],
+      "rating": 4.9,
+      "imageUrl": "https://images.unsplash.com/photo-1527030280862-64139fba04ca",
+      "insurance": [
+        "Private Pay",
+        "Select Insurance",
+        "Luxury Coverage"
+      ],
+      "amenities": [
+        "Private Beach",
+        "Spa Services",
+        "Gourmet Dining",
+        "Tennis Courts"
+      ],
+      "accreditations": [
+        "JCAHO",
+        "LegitScript"
+      ],
+      "specialties": [
+        "Executive Treatment",
+        "Privacy Focus",
+        "Luxury Care",
+        "Holistic Wellness"
+      ]
+    }
+  ],
+  "states": [
+    {
+      "name": "California",
+      "abbreviation": "CA",
+      "totalCenters": 158,
+      "imageUrl": "https://images.unsplash.com/photo-1449034446853-66c86144b0ad",
+      "description": "California offers a diverse range of treatment options, from luxury rehabs in Malibu to affordable centers throughout the state. Known for innovative treatment approaches and excellent care standards."
+    },
+    {
+      "name": "Florida",
+      "abbreviation": "FL",
+      "totalCenters": 142,
+      "imageUrl": "https://images.unsplash.com/photo-1605723517503-3cadb5818a0c",
+      "description": "Florida's rehabilitation centers provide serene environments for recovery, with many facilities offering beach-side locations and year-round warm weather perfect for outdoor therapy activities."
+    },
+    {
+      "name": "Colorado",
+      "abbreviation": "CO",
+      "totalCenters": 87,
+      "imageUrl": "https://images.unsplash.com/photo-1578983427937-26078ee3d9d3",
+      "description": "Colorado treatment centers combine traditional recovery programs with outdoor adventure therapy, taking advantage of the state's natural beauty and recreational opportunities."
+    },
+    {
+      "name": "Texas",
+      "abbreviation": "TX",
+      "totalCenters": 134,
+      "imageUrl": "https://images.unsplash.com/photo-1531218150217-54595bc2b934",
+      "description": "Texas offers a wide variety of treatment options across its major cities, with programs ranging from faith-based recovery to evidence-based medical treatments."
+    },
+    {
+      "name": "New York",
+      "abbreviation": "NY",
+      "totalCenters": 145,
+      "imageUrl": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9",
+      "description": "New York provides diverse treatment options in both urban and rural settings, with many centers offering specialized programs for professionals and artistic therapy approaches."
+    },
+    {
+      "name": "Arizona",
+      "abbreviation": "AZ",
+      "totalCenters": 76,
+      "imageUrl": "https://images.unsplash.com/photo-1537791341351-21ac2d61b86c",
+      "description": "Arizona's rehabilitation centers utilize the desert's therapeutic environment, offering holistic healing approaches and Native American-inspired treatment methods."
+    },
+    {
+      "name": "Washington",
+      "abbreviation": "WA",
+      "totalCenters": 92,
+      "imageUrl": "https://images.unsplash.com/photo-1469321461812-afeb94496b27",
+      "description": "Washington state combines urban and wilderness treatment settings, with many centers offering innovative approaches to recovery in the Pacific Northwest's natural beauty."
+    },
+    {
+      "name": "Massachusetts",
+      "abbreviation": "MA",
+      "totalCenters": 89,
+      "imageUrl": "https://images.unsplash.com/photo-1572225303598-d76d8e9c1943",
+      "description": "Massachusetts features many historical treatment centers with strong connections to medical institutions, offering evidence-based programs and cutting-edge research."
+    },
+    {
+      "name": "Illinois",
+      "abbreviation": "IL",
+      "totalCenters": 112,
+      "imageUrl": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f",
+      "description": "Illinois offers diverse treatment options in both Chicago's urban environment and peaceful rural settings, with strong emphasis on family involvement and aftercare."
+    },
+    {
+      "name": "Pennsylvania",
+      "abbreviation": "PA",
+      "totalCenters": 124,
+      "imageUrl": "https://images.unsplash.com/photo-1569761316261-9a8696fa2ca3",
+      "description": "Pennsylvania's treatment centers offer comprehensive care options, from historic facilities in Philadelphia to serene mountain retreats in the Poconos."
+    },
+    {
+      "name": "Oregon",
+      "abbreviation": "OR",
+      "totalCenters": 68,
+      "imageUrl": "https://images.unsplash.com/photo-1572724013724-4aa87a769d52",
+      "description": "Oregon's rehabilitation centers emphasize holistic healing and nature-based therapy, taking advantage of the state's diverse landscapes from coast to mountains."
+    },
+    {
+      "name": "Utah",
+      "abbreviation": "UT",
+      "totalCenters": 54,
+      "imageUrl": "https://images.unsplash.com/photo-1469521669194-babb45599def",
+      "description": "Utah features many wilderness therapy programs and faith-based treatment centers, offering unique approaches to recovery in stunning natural settings."
+    },
+    {
+      "name": "Virginia",
+      "abbreviation": "VA",
+      "totalCenters": 82,
+      "imageUrl": "https://images.unsplash.com/photo-1603393518079-71d498a0b373",
+      "description": "Virginia combines historical charm with modern treatment approaches, offering programs in both urban and rural settings with strong community support."
+    },
+    {
+      "name": "Michigan",
+      "abbreviation": "MI",
+      "totalCenters": 95,
+      "imageUrl": "https://images.unsplash.com/photo-1576872381149-7847515ce5d8",
+      "description": "Michigan's treatment centers offer comprehensive care across the state, with many facilities taking advantage of the Great Lakes' therapeutic environment."
+    },
+    {
+      "name": "Nevada",
+      "abbreviation": "NV",
+      "totalCenters": 48,
+      "imageUrl": "https://images.unsplash.com/photo-1581351721010-8cf859cb14a4",
+      "description": "Nevada provides unique treatment options in both urban and desert settings, with many centers offering luxury amenities and specialized programs for gaming addiction."
+    },
+    {
+      "name": "Minnesota",
+      "abbreviation": "MN",
+      "totalCenters": 78,
+      "imageUrl": "https://images.unsplash.com/photo-1594062864721-39547e88c482",
+      "description": "Minnesota offers comprehensive treatment programs with a focus on holistic healing and mental health integration. Many centers feature serene lakeside settings perfect for recovery."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "The staff at Sunrise Recovery Center gave me the tools and support I needed to rebuild my life. I'm forever grateful for their compassionate care.",
+      "author": "Sarah M.",
+      "role": "Alumni, 2 Years Sober",
+      "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
+    },
+    {
+      "quote": "Oceanview Wellness provided the perfect environment for my recovery journey. The combination of professional care and peaceful surroundings made all the difference.",
+      "author": "Michael R.",
+      "role": "Alumni, 18 Months Sober",
+      "imageUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+    },
+    {
+      "quote": "The adventure therapy program at Mountain Serenity helped me discover inner strength I never knew I had. It was truly a life-changing experience.",
+      "author": "Jennifer L.",
+      "role": "Alumni, 3 Years Sober",
+      "imageUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2"
+    },
+    {
+      "quote": "Finding this recovery center was a turning point in my life. The holistic approach to treatment addressed not just my addiction, but my whole well-being.",
+      "author": "David K.",
+      "role": "Alumni, 14 Months Sober",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+    },
+    {
+      "quote": "The family program was instrumental in healing not just me, but my entire support system. We learned to communicate and support each other in healthy ways.",
+      "author": "Maria H.",
+      "role": "Alumni, 2.5 Years Sober",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+    },
+    {
+      "quote": "As a veteran, I appreciated how the program addressed both addiction and PTSD. The specialized care and understanding made all the difference in my recovery.",
+      "author": "James T.",
+      "role": "Alumni, 4 Years Sober",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+    }
+  ]
+}

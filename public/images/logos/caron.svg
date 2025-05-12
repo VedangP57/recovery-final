@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M30 20h140v40H30z" fill="#006B3F"/>
+  <text x="100" y="42" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFF" text-anchor="middle">
+    CARON
+  </text>
+  <text x="100" y="55" font-family="Arial, sans-serif" font-size="10" fill="#FFF" text-anchor="middle">
+    TREATMENT CENTERS
+  </text>
+  <path d="M40 35c5-8 15-8 20 0-5-4-15-4-20 0z" fill="#FFF"/>
+</svg> 
