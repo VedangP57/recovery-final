@@ -32,8 +32,8 @@
     --radius: 0.75rem;
 
     /* Font family variables */
-    --font-inter: 'Inter', sans-serif;
-    --font-poppins: 'Poppins', sans-serif;
+    --font-outfit: 'Outfit', sans-serif;
+    --font-jakarta: 'Plus Jakarta Sans', sans-serif;
   }
 
   html {
@@ -42,7 +42,8 @@
 
   body {
     @apply min-h-screen bg-background text-foreground antialiased transition-colors duration-300;
-    font-family: var(--font-poppins);
+    font-family: var(--font-jakarta);
+    letter-spacing: 0.025em;
   }
 
   /* Update heading styles */
@@ -52,18 +53,20 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-inter);
-    @apply font-semibold tracking-tight;
+    font-family: var(--font-outfit);
+    @apply font-semibold tracking-wide;
   }
 }
 
 /* Theme utilities */
 .font-heading {
-  font-family: var(--font-inter);
+  font-family: var(--font-outfit);
+  letter-spacing: 0.025em;
 }
 
 .font-body {
-  font-family: var(--font-poppins);
+  font-family: var(--font-jakarta);
+  letter-spacing: 0.025em;
 }
 
 /* Dark mode variables */
@@ -105,6 +108,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -115,6 +119,7 @@
     transform: translateY(20px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;

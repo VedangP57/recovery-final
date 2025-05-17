@@ -53,7 +53,7 @@ export default function RequestInfoForm({ insurance, phone }: RequestInfoFormPro
         <div className="mb-6 text-center">
           <h3 className="text-xl font-semibold text-foreground dark:text-gray-100">Request Information</h3>
           <p className="mt-2 text-sm text-muted-foreground dark:text-gray-400">
-            Fill out the form below and we'll get back to you shortly
+            Fill out the form below and we&apos;ll get back to you shortly
           </p>
         </div>
 

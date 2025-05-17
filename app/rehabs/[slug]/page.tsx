@@ -20,7 +20,7 @@ export default function RehabDetailPage({ params }: RehabDetailPageProps) {
             Treatment Center Not Found
           </h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            The rehabilitation center you're looking for doesn't exist in our database.
+            The rehabilitation center you&apos;re looking for doesn&apos;t exist in our database.
           </p>
         </div>
       </div>

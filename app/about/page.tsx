@@ -87,8 +87,8 @@ export default function AboutPage() {
           <figure className="mt-10">
             <blockquote className="text-center text-xl font-semibold leading-8 text-foreground sm:text-2xl sm:leading-9">
               <p>
-                "Our mission is to break down barriers to treatment and provide hope to those struggling with addiction.
-                We believe that with the right support and resources, recovery is possible for everyone."
+                &ldquo;Our mission is to break down barriers to treatment and provide hope to those struggling with addiction.
+                We believe that with the right support and resources, recovery is possible for everyone.&rdquo;
               </p>
             </blockquote>
             <figcaption className="mt-10">

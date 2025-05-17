@@ -1,22 +1,22 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { Inter, Poppins } from 'next/font/google';
+import { Outfit, Plus_Jakarta_Sans } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ColorBar from '@/components/ColorBar';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 
-const inter = Inter({
+const outfit = Outfit({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-outfit',
   display: 'swap',
 });
 
-const poppins = Poppins({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-poppins',
+  variable: '--font-jakarta',
   display: 'swap',
 });
 
@@ -59,10 +59,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${poppins.variable}`}
+      className={`${outfit.variable} ${jakarta.variable}`}
       suppressHydrationWarning
     >
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${jakarta.className} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

@@ -1,9 +1,14 @@
 'use client';
 
-import React from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import * as z from 'zod';
+import { z } from 'zod';
+import { Mail, Phone, User, MessageSquare } from 'lucide-react';
+import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
 import {
   Form,
   FormControl,
@@ -12,21 +17,24 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Button } from '@/components/ui/button';
-import { Mail, Phone, User, ArrowRight } from 'lucide-react';
-import { cn } from '@/lib/utils';
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
   email: z.string().email('Invalid email address'),
-  phone: z.string().min(10, 'Phone number must be at least 10 digits'),
+  phone: z.string().optional(),
   message: z.string().min(10, 'Message must be at least 10 characters'),
 });
 
+type FormData = z.infer<typeof formSchema>;
+
 export default function ContactForm() {
-  const form = useForm<z.infer<typeof formSchema>>({
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: '' });
+
+  const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: '',
@@ -36,9 +44,55 @@ export default function ContactForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    // Handle form submission
+  async function onSubmit(data: FormData) {
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
+
+    try {
+      console.log('Submitting form data:', data);
+
+      const response = await fetch('/api/contact-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      console.log('Response status:', response.status);
+      console.log('Response headers:', Object.fromEntries(response.headers.entries()));
+
+      let result;
+      const text = await response.text();
+      console.log('Raw response:', text);
+
+      try {
+        result = JSON.parse(text);
+      } catch (e) {
+        console.error('Error parsing JSON response:', e);
+        throw new Error(`Invalid server response: ${text.substring(0, 100)}`);
+      }
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to send message');
+      }
+
+      setSubmitStatus({
+        type: 'success',
+        message: 'Message sent successfully! We will get back to you soon.',
+      });
+      form.reset();
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setSubmitStatus({
+        type: 'error',
+        message: error instanceof Error
+          ? error.message
+          : 'Failed to send message. Please try again later.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -47,7 +101,7 @@ export default function ContactForm() {
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold text-primary-950 dark:text-white">Send Us a Message</h2>
           <p className="mt-2 text-gray-700 dark:text-gray-300">
-            We'll get back to you as soon as possible
+            We&apos;ll get back to you as soon as possible
           </p>
         </div>
 
@@ -59,7 +113,9 @@ export default function ContactForm() {
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-sm font-medium text-gray-700 dark:text-gray-200">Full Name</FormLabel>
+                    <FormLabel className="text-sm font-medium text-gray-700 dark:text-gray-200">
+                      Name
+                    </FormLabel>
                     <FormControl>
                       <div className="relative">
                         <Input
@@ -86,7 +142,9 @@ export default function ContactForm() {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-sm font-medium text-gray-700 dark:text-gray-200">Email</FormLabel>
+                    <FormLabel className="text-sm font-medium text-gray-700 dark:text-gray-200">
+                      Email
+                    </FormLabel>
                     <FormControl>
                       <div className="relative">
                         <Input
@@ -115,7 +173,9 @@ export default function ContactForm() {
               name="phone"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-sm font-medium text-gray-700 dark:text-gray-200">Phone Number</FormLabel>
+                  <FormLabel className="text-sm font-medium text-gray-700 dark:text-gray-200">
+                    Phone (Optional)
+                  </FormLabel>
                   <FormControl>
                     <div className="relative">
                       <Input
@@ -143,42 +203,50 @@ export default function ContactForm() {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-sm font-medium text-gray-700 dark:text-gray-200">Message</FormLabel>
+                  <FormLabel className="text-sm font-medium text-gray-700 dark:text-gray-200">
+                    Message
+                  </FormLabel>
                   <FormControl>
-                    <Textarea
-                      placeholder="Tell us how we can help..."
-                      className={cn(
-                        "min-h-[150px] resize-none",
-                        "bg-gray-50 dark:bg-gray-900/50",
-                        "border-gray-200 dark:border-gray-700",
-                        "focus:border-primary-500 dark:focus:border-primary-400",
-                        "focus:ring-2 focus:ring-primary-500/20 dark:focus:ring-primary-400/20",
-                        "placeholder:text-gray-500/60 dark:placeholder:text-gray-400/60"
-                      )}
-                      {...field}
-                    />
+                    <div className="relative">
+                      <Textarea
+                        placeholder="How can we help you?"
+                        {...field}
+                        className={cn(
+                          "pl-10 min-h-[120px]",
+                          "bg-gray-50 dark:bg-gray-900/50",
+                          "border-gray-200 dark:border-gray-700",
+                          "focus:border-primary-500 dark:focus:border-primary-400",
+                          "focus:ring-2 focus:ring-primary-500/20 dark:focus:ring-primary-400/20",
+                          "placeholder:text-gray-500/60 dark:placeholder:text-gray-400/60"
+                        )}
+                      />
+                      <MessageSquare className="h-5 w-5 text-primary-500/70 dark:text-gray-500 absolute left-3 top-3" />
+                    </div>
                   </FormControl>
                   <FormMessage className="text-red-500 dark:text-red-400" />
                 </FormItem>
               )}
             />
+
+            {submitStatus.type && (
+              <div
+                className={cn(
+                  'p-4 rounded-lg text-sm',
+                  submitStatus.type === 'success'
+                    ? 'bg-green-50 text-green-700 dark:bg-green-900/50 dark:text-green-400'
+                    : 'bg-red-50 text-red-700 dark:bg-red-900/50 dark:text-red-400'
+                )}
+              >
+                {submitStatus.message}
+              </div>
+            )}
+
             <Button
               type="submit"
-              className={cn(
-                "w-full h-12",
-                "bg-primary-600 hover:bg-primary-500",
-                "dark:bg-primary-500 dark:hover:bg-primary-400",
-                "text-primary-50 dark:text-primary-50",
-                "font-semibold text-base",
-                "rounded-xl",
-                "shadow-md hover:shadow-lg",
-                "transition-all duration-200",
-                "flex items-center justify-center gap-2",
-                "group"
-              )}
+              className="w-full h-11 bg-primary-600 hover:bg-primary-700 text-white"
+              disabled={isSubmitting}
             >
-              Send Message
-              <ArrowRight className="h-5 w-5 group-hover:translate-x-0.5 transition-transform" />
+              {isSubmitting ? 'Sending...' : 'Send Message'}
             </Button>
           </form>
         </Form>
