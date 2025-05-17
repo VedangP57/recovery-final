@@ -2,8 +2,8 @@ import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import { z } from 'zod';
 
-// Initialize Resend with your API key
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Initialize Resend only if API key is available
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 // Contact form validation schema
 const contactSchema = z.object({
@@ -28,8 +28,8 @@ export async function POST(request: Request) {
     const validatedData = contactSchema.parse(body);
     console.log('Validated data:', validatedData);
 
-    // Check if Resend API key is configured
-    if (!process.env.RESEND_API_KEY) {
+    // Check if Resend is configured
+    if (!resend) {
       console.error('RESEND_API_KEY is not configured');
       return new NextResponse(
         JSON.stringify({ error: 'Email service is not configured' }),
