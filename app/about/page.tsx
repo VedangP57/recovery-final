@@ -13,7 +13,7 @@ export default function AboutPage() {
     {
       name: 'Compassion',
       description:
-        "We approach every individual with understanding and empathy, recognizing that each person's journey to recovery is unique.",
+        "We approach every individual with understanding and empathy, recognizing that each person&apos;s journey to recovery is unique.",
     },
     {
       name: 'Excellence',
@@ -40,7 +40,7 @@ export default function AboutPage() {
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
             <h1 className="mt-2 text-4xl font-bold tracking-tight text-foreground sm:text-6xl">About  Rehab Directory</h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground">
-              We're dedicated to helping individuals find the right path to recovery by connecting them with trusted
+              We&apos;re dedicated to helping individuals find the right path to recovery by connecting them with trusted
               rehabilitation centers across the United States. Our mission is to make the journey to recovery more
               accessible and transparent for everyone.
             </p>
